@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Copy-to-clipboard notes manager",
+    "version": "1.0",
+    "description": "Maintain notes that you can easily copy into your clipboard.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "clipboardWrite",
+      "storage"
+    ]
+  }

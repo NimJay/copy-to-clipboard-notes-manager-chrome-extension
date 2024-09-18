@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Copy-to-clipboard notes manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        button,
+        textarea {
+            margin-top: 15px;
+            padding: 15px;
+        }
+
+        button {
+            font-size: 18px;
+            width: 100%;
+            border: none;
+            color: rgba(0, 0, 0, 0.7);
+            background-color: #95dc5f;
+            border-radius: 6px;
+            box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            outline: none;
+            transition: box-shadow 0.2s ease-out, opacity .2s ease-out;
+        }
+
+        button:focus {
+            box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        textarea {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="copy-button">Copy to clipboard</button>
+    <textarea id="note-textarea"></textarea>
+    <button id="save-button" disabled>Save changes</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>
